@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forms and Form Validation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="image-area">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo Image" class="src">
+                ODIN
+            </div>
+            <p class="attribute">
+                Photo by
+                <a
+                  href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  >Halie West</a
+                >
+                on
+                <a
+                  href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  >Unsplash</a
+                >
+            </p>
+        </div>
+        <div class="text-area">
+            <p>
+                This is not a real online service! You know you need something like
+                this in your life to help you realize your deepest dreams. Sign up
+                <em>now</em> to get started.
+              </p>
+              <p>You <em>know</em> you want to.</p>
+              <form action="" method="post">
+                <h3>Let's do this!</h3>
+                <div class="col">
+                    <div class="row">
+                        <div class="group">
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="first_name" id="first_name">
+                        </div>
+                        <div class="group">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" id="last_name" class="first_name">
+                        </div>
+                    </div>
+                   <div class="row">
+                        <div class="group">
+                            <label for="emailid">Email</label>
+                            <input type="email" name="emailid" id="emailid">
+                        </div>
+                        <div class="group">
+                            <label for="phone_number">Phone Number</label>
+                            <input type="number" name="phone_number" id="phone_number">
+                        </div>
+                   </div>
+                    <div class="row">
+                        <div class="group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" class="error-input">
+                            <p class="error-message">*Passwords do not match</p>
+                        </div>
+                        <div class="group">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="confirm_password" name="confirm_password" id="confirm_password" class="error-input">
+                        </div>
+                    </div>
+                </div>
+              </form>
+              <button type="submit" id="submit" class="submit">Create Account</button>
+              <p class="register">Already have an account? <a href="#">Log In</a></p>
+        </div>
+    </div>    
 </body>
 </html>
